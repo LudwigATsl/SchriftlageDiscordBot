@@ -6,7 +6,7 @@ const intCMD = "!interessen"
 //Interessenrollen(Veränderbar)
 let initialMessage = `**Wähle deine Interessenrollen**`;
 const roles = ["Digital","Film","Print","CGI","Entwicklung"];
-const reactions = ["<:Digital:528686778895433729>","<:Film:528686778966736926>","<:Print:528686779423916073>","<:CGI:528686778782056468>","<:Entwicklung:528686778933051402>"];
+const reactions = [":Digital:528686778895433729","<:Film:528686778966736926>","<:Print:528686779423916073>","<:CGI:528686778782056468>","<:Entwicklung:528686778933051402>"];
 
 //Mitglieds zuweisung nach akzeptieren der Regeln ( NICHT VERÄNDERN )
 let VinitialMessage = `**Akzeptieren der Regeln**`;
