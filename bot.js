@@ -5,7 +5,7 @@ let initialMessage = `**Akzeptieren der Regeln**`;
 const roles = ["Mitglied"];
 const reactions = ["✅"];
 const Discord = require('discord.js');
-var information = JSON.parse(package.json)
+var information = $.getJSON(package.json)
 
 
 //Load up the bot...
