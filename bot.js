@@ -110,7 +110,7 @@ bot.on("message", message => {
     
     var prefix = '#';
 
-if(message.content.startsWith(prefix + "hallo")|| message.content.startsWith(prefix + "Hallo")){
+if(message.content.toLowerCase == prefix + "hallo" {
     var HalloInfo = new Discord.RichEmbed()
         .setColor("#7289da")
         .setThumbnail(bot.user.avatarURL)
