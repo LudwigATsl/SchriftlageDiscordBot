@@ -1,9 +1,19 @@
 //Settings!
 const yourID = "527639184941383680";
-const setupCMD = "!rolle"
-let initialMessage = `**Akzeptieren der Regeln**`;
-const roles = ["Mitglied"];
-const reactions = ["✅"];
+const verifyCMD = "!rolle"
+const intCMD = "!interessen"
+
+//Interessenrollen(Veränderbar)
+let initialMessage = `**Wähle deine Interessenrollen**`;
+const roles = ["Digital","Film","Print","CGI","Entwicklung"];
+const reactions = ["😄","💨","🤣","⛽","✨"];
+
+//Mitglieds zuweisung nach akzeptieren der Regeln ( NICHT VERÄNDERN )
+let VinitialMessage = `**Akzeptieren der Regeln**`;
+const Vroles = ["Mitglied"];
+const Vreactions = ["✅"];
+
+
 const Discord = require('discord.js');
 
 //Bot starten... // Status setzen...
@@ -29,17 +39,17 @@ bot.on('ready', () => {
 
 
 
-//Function to generate the role messages, based on your settings
+//Hier werden die Nachrichten zum Abbonierten der Interessenrollen erstellt. Basierend auf den oben eigetragenen Werten.
 function generateMessages(){
     var messages = [];
     messages.push(initialMessage);
-    for (let role of roles) messages.push(`Durch das Reagieren mit :white_check_mark:  auf diese Nachricht, akzeptierst du die Serverregeln, wirst freigeschaltet und erhältst die Rolle **"${role}"**!`); //DONT CHANGE THIS
+    for (let role of roles) messages.push(`Abboniere das <:SL:528604903094878209> - Interessengebiet **"${role}"** durch einen Klick auf die unten aufgeführte Reaktion!`); //DONT CHANGE THIS
     return messages;
 }
 
 
 bot.on("message", message => {
-    if (message.author.id == yourID && message.content.toLowerCase() == setupCMD){
+    if (message.author.id == yourID && message.content.toLowerCase() == intCMD){
         var toSend = generateMessages();
         let mappedArray = [[toSend[0], false], ...toSend.slice(1).map( (message, idx) => [message, reactions[idx]])];
         for (let mapObj of mappedArray){
@@ -80,6 +90,34 @@ bot.on('raw', event => {
  
     }   
 });
+
+
+
+//Generieren, Absenden und reagieren der Regel Bestätigungs Nachricht
+
+function VgenerateMessages(){
+    var messages = [];
+    messages.push(VinitialMessage);
+    for (let role of Vroles) messages.push(`Durch das Reagieren mit ✅ auf diese Nachricht, akzeptierst du die Server Regeln und erhältst die Rolle **"${role}"**`); //DONT CHANGE THIS
+    return messages;
+}
+
+
+bot.on("message", message => {
+    if (message.author.id == yourID && message.content.toLowerCase() == verifyCMD){
+        var toSend = VgenerateMessages();
+        let mappedArray = [[toSend[0], false], ...toSend.slice(1).map( (message, idx) => [message, Vreactions[idx]])];
+        for (let mapObj of mappedArray){
+            message.channel.send(mapObj[0]).then( sent => {
+                if (mapObj[1]){
+                  sent.react(mapObj[1]);  
+                } 
+            });
+        }
+    }
+})
+
+
 
     bot.on('guildMemberAdd', member => {
         member.send("Herzlich Wilkommen auf dem **Schriftlage Community Server** !\n\nBitte halte dich an die vorgeführten Chatregeln, du findest sie unter `#regeln`.\nInformationen über uns und den Server erfährst du im Kanal  `#info`.\nBleib auf dem laufenden und schau ab und zu mal hier rein: `#ankündigungenen-und-updates`.\n\nSchalte dich auf dem Server frei, indem du die in `#regeln` aufgeführten Regeln akzeptierst.\n\nWir hoffen du genießt deinen Aufenhalt!");
