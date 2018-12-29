@@ -170,6 +170,7 @@ bot.on("message", message => {
         message.channel.send(PrintEmbed);
         message.channel.send(CGIEmbed);
         message.channel.send(EntwicklungEmbed);
+        break
     
 });
 
