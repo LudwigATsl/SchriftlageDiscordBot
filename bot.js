@@ -6,7 +6,7 @@ const intCMD = "!interessen"
 //Interessenrollen(Veränderbar)
 let initialMessage = `**Wähle deine Interessenrollen**`;
 const roles = ["Digital","Film","Print","CGI","Entwicklung"];
-const reactions = ["😄","💨","🤣","⛽","✨"];
+const reactions = ["<:Digital:528686778895433729>","<:Film:528686778966736926>","<:Print:528686779423916073>","<:CGI:528686778782056468>","<:Entwicklung:528686778933051402>"];
 
 //Mitglieds zuweisung nach akzeptieren der Regeln ( NICHT VERÄNDERN )
 let VinitialMessage = `**Akzeptieren der Regeln**`;
@@ -43,7 +43,7 @@ bot.on('ready', () => {
 function generateMessages(){
     var messages = [];
     messages.push(initialMessage);
-    for (let role of roles) messages.push(`Abboniere das <:SL:528604903094878209> - Interessengebiet **"${role}"** durch einen Klick auf die unten aufgeführte Reaktion!`); //DONT CHANGE THIS
+    for (let role of roles) messages.push(`Abboniere das <:SL:527796195280551936> - Interessengebiet **"${role}"** durch einen Klick auf die unten aufgeführte Reaktion!`); //DONT CHANGE THIS
     return messages;
 }
 
