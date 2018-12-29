@@ -145,30 +145,40 @@ bot.on("message", message => {
             .setThumbnail("https://i.imgur.com/K9xW5B4.png")
             .addField("Befehle", "das kann ich für dich tun", true)
             message.channel.send(DigitalEmbed);
+            .then(msg => {
         
-        var FilmEmbed = new Discord.RichEmbed()
-            .setColor("#7289da")
-            .setThumbnail("https://i.imgur.com/dciXn7h.png")
-            .addField("Befehle", "das kann ich für dich tun", true)
-            message.channel.send(FilmEmbed);
+                var FilmEmbed = new Discord.RichEmbed()
+                    .setColor("#7289da")
+                    .setThumbnail("https://i.imgur.com/dciXn7h.png")
+                    .addField("Befehle", "das kann ich für dich tun", true)
+                    message.channel.send(FilmEmbed);
+                    .then(msg => {
         
-        var PrintEmbed = new Discord.RichEmbed()
-            .setColor("#7289da")
-            .setThumbnail("https://i.imgur.com/meRRm5R.png")
-            .addField("Befehle", "das kann ich für dich tun", true)
-            message.channel.send(PrintEmbed);
+                        var PrintEmbed = new Discord.RichEmbed()
+                            .setColor("#7289da")
+                            .setThumbnail("https://i.imgur.com/meRRm5R.png")
+                            .addField("Befehle", "das kann ich für dich tun", true)
+                            message.channel.send(PrintEmbed);
+                            .then(msg => {
+                                
         
-        var CGIEmbed = new Discord.RichEmbed()
-            .setColor("#7289da")
-            .setThumbnail("https://i.imgur.com/sGoJM2Y.png")
-            .addField("Befehle", "das kann ich für dich tun", true)
-            message.channel.send(CGIEmbed);
+                                var CGIEmbed = new Discord.RichEmbed()
+                                    .setColor("#7289da")
+                                    .setThumbnail("https://i.imgur.com/sGoJM2Y.png")
+                                    .addField("Befehle", "das kann ich für dich tun", true)
+                                    message.channel.send(CGIEmbed);
+                                        .then(msg => {
         
-        var EntwicklungEmbed = new Discord.RichEmbed()
-            .setColor("#7289da")
-            .setThumbnail("https://i.imgur.com/PmeG7m4.png")
-            .addField("Befehle", "das kann ich für dich tun", true)
-            message.channel.send(EntwicklungEmbed);
+                                            var EntwicklungEmbed = new Discord.RichEmbed()
+                                                .setColor("#7289da")
+                                                .setThumbnail("https://i.imgur.com/PmeG7m4.png")
+                                                .addField("Befehle", "das kann ich für dich tun", true)
+                                                message.channel.send(EntwicklungEmbed);
+                                        })
+                            })
+                    })
+            })
+                                            
         
 });
 
