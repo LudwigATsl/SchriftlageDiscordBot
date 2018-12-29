@@ -123,7 +123,7 @@ bot.on("message", message => {
         member.send("Herzlich Wilkommen auf dem **Schriftlage Community Server** !\n\nBitte halte dich an die vorgeführten Chatregeln, du findest sie unter `#regeln`.\nInformationen über uns und den Server erfährst du im Kanal  `#info`.\nBleib auf dem laufenden und schau ab und zu mal hier rein: `#ankündigungenen-und-updates`.\n\nSchalte dich auf dem Server frei, indem du die in `#regeln` aufgeführten Regeln akzeptierst.\n\nWir hoffen du genießt deinen Aufenhalt!");
 
         var social = new Discord.RichEmbed()
-        .setThumbnail("https://imgur.com/a/Vb3MWHJ")
+        .setThumbnail("https://i.imgur.com/sGoJM2Y.png")
         .setColor("#7289da")
         .addField("**Schau doch auch mal in unsere sozialen Netzwerke herein**", "__**Unsere Sozialen Netzwerke**__\n[Instagram](https://www.instagram.com/schriftlage) - Auf Instagram siehst du Ausschnitte unserer Arbeiten und diverse andere Bilder unseres Altages und deren Fortschritt. \n[Twitter](https://twitter.com/schriftlage) - Auf Twitter Informieren wir euch in Echtzeit über die neuen Dinge und können eure Fragen beantworten.\n[Facebook](https://www.facebook.com/Schriftlage) - Auf Facebook könnt ihr euch ein detaillierteres Bild unserer Arbeit machen.\n[YouTube](https://www.youtube.com/channel/UC_nrpoFCkPvWIle60Kz41IA) - Auf unseren YouTube Kanal kannst du dir ganz bequem die besten unserer Projekte anschauen. \n[Soundcloud](https://soundcloud.com/Schriftlage) - Unsere Soundcloud\n[Dribble](https://dribbble.com/Schriftlage) - Unser Dribble Account", true)
         member.send(social);
