@@ -165,11 +165,11 @@ bot.on("message", message => {
             .setThumbnail("https://i.imgur.com/PmeG7m4.png")
             .addField("Befehle", "das kann ich für dich tun", true)
         
-        message.channel.send(DigitalEmbed);
-        message.channel.send(FilmEmbed);
-        message.channel.send(PrintEmbed);
-        message.channel.send(CGIEmbed);
-        message.channel.send(EntwicklungEmbed);
+            message.channel.send(DigitalEmbed);
+            message.channel.send(FilmEmbed);
+            message.channel.send(PrintEmbed);
+            message.channel.send(CGIEmbed);
+            message.channel.send(EntwicklungEmbed);
     
 });
 
