@@ -5,6 +5,8 @@ let initialMessage = `**Akzeptieren der Regeln**`;
 const roles = ["Mitglied"];
 const reactions = ["✅"];
 const Discord = require('discord.js');
+var information = JSON.parse(package.json)
+
 
 //Load up the bot...
 
@@ -13,7 +15,7 @@ bot.login(process.env.token);
 
 bot.on('ready', function() {
     console.log('Schriftlage-Bot wurde erfolgreich gestartet.');
-    console.log(package)
+    console.log(information)
 });
 
 
