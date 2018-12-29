@@ -76,7 +76,7 @@ bot.on('raw', event => {
 
         var social = new Discord.RichEmbed()
         .setColor("#7289da")
-        .addField("Schau doch auch mal in unsere sozialen Netzwerke herein", "**Unsere Sozialen Netzwerke**\n[Instagram](https://www.instagram.com/schriftlage) - Unser Instagram Account\n[Twitter](https://www.instagram.com/schriftlage) - Unser Twitter Account\n[Facebook](https://www.instagram.com/schriftlage) - Unsere Facebook Seite\n[YouTube](https://www.instagram.com/schriftlage) - Unser YouTube Kanal\n[Soundcloud](https://www.instagram.com/schriftlage) - Unsere Soundcloud\n[Dribble](https://www.instagram.com/schriftlage) - Unser Dribble Account", true)
+        .addField("Schau doch auch mal in unsere sozialen Netzwerke herein", "**Unsere Sozialen Netzwerke**\n[Instagram](https://www.instagram.com/schriftlage) - Unser Instagram Account\n[Twitter](https://twitter.com/schriftlage) - Unser Twitter Account\n[Facebook](https://www.facebook.com/Schriftlage) - Unsere Facebook Seite\n[YouTube](https://www.youtube.com/channel/UC_nrpoFCkPvWIle60Kz41IA) - Unser YouTube Kanal\n[Soundcloud](https://soundcloud.com/Schriftlage) - Unsere Soundcloud\n[Dribble](https://dribbble.com/Schriftlage) - Unser Dribble Account", true)
         member.send(social);
 });
     
