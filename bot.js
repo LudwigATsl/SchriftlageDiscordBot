@@ -13,6 +13,7 @@ bot.login(process.env.token);
 
 bot.on('ready', function() {
     console.log('Schriftlage-Bot wurde erfolgreich gestartet.');
+    console.log(package)
 });
 
 
