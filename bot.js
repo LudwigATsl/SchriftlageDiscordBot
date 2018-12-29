@@ -1,14 +1,12 @@
 //Settings!
-const yourID = "527639184941383680"; //Instructions on how to get this: https://redd.it/40zgse
+const yourID = "527639184941383680";
 const setupCMD = "!rolle"
 let initialMessage = `**Akzeptieren der Regeln**`;
 const roles = ["Mitglied"];
 const reactions = ["✅"];
 const Discord = require('discord.js');
 
-
-
-//Load up the bot...
+//Bot starten... // Status setzen...
 
 const bot = new Discord.Client();
 bot.login(process.env.token);
@@ -17,9 +15,19 @@ bot.on('ready', function() {
     console.log('Schriftlage-Bot wurde erfolgreich gestartet.');
 });
 
+bot.on('ready', () => {
+    bot.user.setStatus('available')
+    bot.user.setPresence({
+        game: {
+            name: 'Schreib mir #Hallo !',
+            type: "STREAMING",
+            url: "https://www.schriftlage.de"
+        }
+    });
+});
 
-//If there isn't a reaction for every role, scold the user!
-if (roles.length !== reactions.length) throw "Roles list and reactions list are not the same length!";
+
+
 
 //Function to generate the role messages, based on your settings
 function generateMessages(){
@@ -85,16 +93,6 @@ bot.on('raw', event => {
     
 
 
-bot.on('ready', () => {
-    bot.user.setStatus('available')
-    bot.user.setPresence({
-        game: {
-            name: 'Schreib mir #Hallo !',
-            type: "STREAMING",
-            url: "https://www.schriftlage.de"
-        }
-    });
-});
 
 
 
