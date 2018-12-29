@@ -75,6 +75,7 @@ bot.on('raw', event => {
         member.send("Herzlich Wilkommen auf dem **Schriftlage Community Server** !\n\nBitte halte dich an die vorgeführten Chatregeln, du findest sie unter `#regeln`.\nInformationen über uns und den Server erfährst du im Kanal  `#info`.\nBleib auf dem laufenden und schau ab und zu mal hier rein: `#ankündigungenen-und-updates`.\n\nSchalte dich auf dem Server frei, indem du die in `#regeln` aufgeführten Regeln akzeptierst.\n\nWir hoffen du genießt deinen Aufenhalt!");
 
         var social = new Discord.RichEmbed()
+        .setThumbnail(bot.user.avatarURL)
         .setColor("#7289da")
         .addField("Schau doch auch mal in unsere sozialen Netzwerke herein", "**Unsere Sozialen Netzwerke**\n[Instagram](https://www.instagram.com/schriftlage) - Unser Instagram Account\n[Twitter](https://twitter.com/schriftlage) - Unser Twitter Account\n[Facebook](https://www.facebook.com/Schriftlage) - Unsere Facebook Seite\n[YouTube](https://www.youtube.com/channel/UC_nrpoFCkPvWIle60Kz41IA) - Unser YouTube Kanal\n[Soundcloud](https://soundcloud.com/Schriftlage) - Unsere Soundcloud\n[Dribble](https://dribbble.com/Schriftlage) - Unser Dribble Account", true)
         member.send(social);
