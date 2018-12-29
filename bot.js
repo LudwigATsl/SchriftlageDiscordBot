@@ -77,7 +77,7 @@ bot.on('raw', event => {
         var social = new Discord.RichEmbed()
         .setThumbnail(bot.user.avatarURL)
         .setColor("#7289da")
-        .addField("**Schau doch auch mal in unsere sozialen Netzwerke herein**", "__**Unsere Sozialen Netzwerke**__\n[Instagram](https://www.instagram.com/schriftlage) - Unser Instagram Account\n[Twitter](https://twitter.com/schriftlage) - Unser Twitter Account\n[Facebook](https://www.facebook.com/Schriftlage) - Unsere Facebook Seite\n[YouTube](https://www.youtube.com/channel/UC_nrpoFCkPvWIle60Kz41IA) - Unser YouTube Kanal\n[Soundcloud](https://soundcloud.com/Schriftlage) - Unsere Soundcloud\n[Dribble](https://dribbble.com/Schriftlage) - Unser Dribble Account", true)
+        .addField("**Schau doch auch mal in unsere sozialen Netzwerke herein**", "__**Unsere Sozialen Netzwerke**__\n[Instagram](https://www.instagram.com/schriftlage) - Auf Instagram siehst du Ausschnitte unserer Arbeiten und diverse andere Bilder unseres Altages und deren Fortschritt. \n[Twitter](https://twitter.com/schriftlage) - Auf Twitter Informieren wir euch in Echtzeit über die neuen Dinge und können eure Fragen beantworten.\n[Facebook](https://www.facebook.com/Schriftlage) - Auf Facebook könnt ihr euch ein detaillierteres Bild unserer Arbeit machen.\n[YouTube](https://www.youtube.com/channel/UC_nrpoFCkPvWIle60Kz41IA) - Auf unseren YouTube Kanal kannst du dir ganz bequem die besten unserer Projekte anschauen. \n[Soundcloud](https://soundcloud.com/Schriftlage) - Unsere Soundcloud\n[Dribble](https://dribbble.com/Schriftlage) - Unser Dribble Account", true)
         member.send(social);
 });
     
