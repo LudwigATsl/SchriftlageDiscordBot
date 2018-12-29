@@ -124,7 +124,8 @@ if(message.content.startsWith(prefix + "hallo")|| message.content.startsWith(pre
 if(message.content.startsWith(prefix + "social")|| message.content.startsWith(prefix + "Social")){
     var social = new Discord.RichEmbed()
         .setColor("#7289da")
-        .addField("Social", "**Unsere Sozialen Netzwerke**\n[Instagram](https://www.instagram.com/schriftlage) - Unser Instagram Account\n", true)
+        .setThumbnail(bot.user.avatarURL)
+        .addField("Social", "**Unsere Sozialen Netzwerke**\n[Instagram](https://www.instagram.com/schriftlage) - Unser Instagram Account\n[Twitter](https://twitter.com/schriftlage) - Unser Twitter Account\n[Facebook](https://www.facebook.com/Schriftlage) - Unsere Facebook Seite\n[YouTube](https://www.youtube.com/channel/UC_nrpoFCkPvWIle60Kz41IA) - Unser YouTube Kanal\n[Soundcloud](https://soundcloud.com/Schriftlage) - Unsere Soundcloud\n[Dribble](https://dribbble.com/Schriftlage) - Unser Dribble Account", true)
         message.author.send(social);
     
     
