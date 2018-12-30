@@ -166,11 +166,14 @@ var EntwicklungEmbed = new Discord.RichEmbed()
 var interessenCMD = "!intr"
 
 bot.on("message", message => {
-    if (message.content.toLowerCase() === interessenCMD && message.author.id == yourID)
-        message.channel.send(FilmEmbed);
-        message.channel.send(PrintEmbed);
-        message.channel.send(CGIEmbed);
-        message.channel.send(EntwicklungEmbed);
+    if(message.author.bot === false) {
+        if (message.content.toLowerCase() === interessenCMD && message.author.id == yourID)
+            message.channel.send(FilmEmbed);
+            message.channel.send(PrintEmbed);
+            message.channel.send(CGIEmbed);
+            message.channel.send(EntwicklungEmbed);
+}
+    
 });
 
 
