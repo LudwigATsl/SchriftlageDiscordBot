@@ -181,7 +181,7 @@ bot.on("message", message => {
             message.channel.send(EntwicklungEmbed)}
     }
     
-});
+};
 
 
 // Private Interaktionen
