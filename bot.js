@@ -180,8 +180,8 @@ bot.on("message", message => {
         if (message.content.toLowerCase() === interessenCMD && message.author.id == yourID){
             message.channel.send(EntwicklungEmbed)}
     }
-    
-};
+ }
+});
 
 
 // Private Interaktionen
