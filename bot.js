@@ -129,7 +129,42 @@ bot.on("message", message => {
         member.send(social);
 });
     
+var DigitalEmbed = new Discord.RichEmbed()
+.setColor("#7289da")
+.setThumbnail("https://i.imgur.com/K9xW5B4.png")
+.addField("Befehle", "das kann ich für dich tun", true)
+            
+        
+var FilmEmbed = new Discord.RichEmbed()
+.setColor("#7289da")
+.setThumbnail("https://i.imgur.com/dciXn7h.png")
+.addField("Befehle", "das kann ich für dich tun", true)
 
+var PrintEmbed = new Discord.RichEmbed()
+.setColor("#7289da")
+.setThumbnail("https://i.imgur.com/meRRm5R.png")
+.addField("Befehle", "das kann ich für dich tun", true)
+        
+var CGIEmbed = new Discord.RichEmbed()
+.setColor("#7289da")
+.setThumbnail("https://i.imgur.com/sGoJM2Y.png")
+.addField("Befehle", "das kann ich für dich tun", true)
+        
+var EntwicklungEmbed = new Discord.RichEmbed()
+.setColor("#7289da")
+.setThumbnail("https://i.imgur.com/PmeG7m4.png")
+.addField("Befehle", "das kann ich für dich tun", true)
+
+
+
+
+function intrLaunch() {
+    
+    message.channel.send(FilmEmbed);
+    message.channel.send(PrintEmbed);
+    message.channel.send(CGIEmbed);
+    message.channel.send(EntwicklungEmbed);
+}
 
 
 
@@ -140,46 +175,7 @@ var interessenCMD = "!intr"
 
 bot.on("message", message => {
     if (message.content.toLowerCase() === interessenCMD && message.author.id == yourID)
-        var DigitalEmbed = new Discord.RichEmbed()
-            .setColor("#7289da")
-            .setThumbnail("https://i.imgur.com/K9xW5B4.png")
-            .addField("Befehle", "das kann ich für dich tun", true)
-            message.channel.send(DigitalEmbed);
-            .then(msg => {
-        
-                var FilmEmbed = new Discord.RichEmbed()
-                    .setColor("#7289da")
-                    .setThumbnail("https://i.imgur.com/dciXn7h.png")
-                    .addField("Befehle", "das kann ich für dich tun", true)
-                    message.channel.send(FilmEmbed);
-                    .then(msg => {
-        
-                        var PrintEmbed = new Discord.RichEmbed()
-                            .setColor("#7289da")
-                            .setThumbnail("https://i.imgur.com/meRRm5R.png")
-                            .addField("Befehle", "das kann ich für dich tun", true)
-                            message.channel.send(PrintEmbed);
-                            .then(msg => {
-                                
-        
-                                var CGIEmbed = new Discord.RichEmbed()
-                                    .setColor("#7289da")
-                                    .setThumbnail("https://i.imgur.com/sGoJM2Y.png")
-                                    .addField("Befehle", "das kann ich für dich tun", true)
-                                    message.channel.send(CGIEmbed);
-                                        .then(msg => {
-        
-                                            var EntwicklungEmbed = new Discord.RichEmbed()
-                                                .setColor("#7289da")
-                                                .setThumbnail("https://i.imgur.com/PmeG7m4.png")
-                                                .addField("Befehle", "das kann ich für dich tun", true)
-                                                message.channel.send(EntwicklungEmbed);
-                                        })
-                            })
-                    })
-            })
-                                            
-        
+        intrLaunch()  
 });
 
 
