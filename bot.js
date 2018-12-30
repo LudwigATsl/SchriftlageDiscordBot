@@ -169,11 +169,15 @@ bot.on("message", message => {
     if(message.author.bot === false) {
         if (message.content.toLowerCase() === interessenCMD && message.author.id == yourID)
             message.channel.send(DigitalEmbed)
+        if (message.content.toLowerCase() === interessenCMD && message.author.id == yourID)
             message.channel.send(FilmEmbed)
+        if (message.content.toLowerCase() === interessenCMD && message.author.id == yourID)
             message.channel.send(PrintEmbed)
+        if (message.content.toLowerCase() === interessenCMD && message.author.id == yourID)
             message.channel.send(CGIEmbed)
+        if (message.content.toLowerCase() === interessenCMD && message.author.id == yourID)
             message.channel.send(EntwicklungEmbed)
-}
+    }
     
 });
 
