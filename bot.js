@@ -132,28 +132,28 @@ bot.on("message", message => {
 var DigitalEmbed = new Discord.RichEmbed()
 .setColor("#7289da")
 .setThumbnail("https://i.imgur.com/K9xW5B4.png")
-.addField("Befehle", "das kann ich für dich tun", true)
+.addField("Digital", "das kann ich für dich tun", true)
             
         
 var FilmEmbed = new Discord.RichEmbed()
 .setColor("#7289da")
 .setThumbnail("https://i.imgur.com/dciXn7h.png")
-.addField("Befehle", "das kann ich für dich tun", true)
+.addField("Film", "das kann ich für dich tun", true)
 
 var PrintEmbed = new Discord.RichEmbed()
 .setColor("#7289da")
 .setThumbnail("https://i.imgur.com/meRRm5R.png")
-.addField("Befehle", "das kann ich für dich tun", true)
+.addField("Print", "das kann ich für dich tun", true)
         
 var CGIEmbed = new Discord.RichEmbed()
 .setColor("#7289da")
 .setThumbnail("https://i.imgur.com/sGoJM2Y.png")
-.addField("Befehle", "das kann ich für dich tun", true)
+.addField("CGI", "das kann ich für dich tun", true)
         
 var EntwicklungEmbed = new Discord.RichEmbed()
 .setColor("#7289da")
 .setThumbnail("https://i.imgur.com/PmeG7m4.png")
-.addField("Befehle", "das kann ich für dich tun", true)
+.addField("Entwicklung", "das kann ich für dich tun", true)
 
 
 
@@ -167,16 +167,18 @@ var interessenCMD = "!intr"
 
 bot.on("message", message => {
     if(message.author.bot === false) {
-        if (message.content.toLowerCase() === interessenCMD && message.author.id == yourID)
-            message.channel.send(DigitalEmbed)
-        if (message.content.toLowerCase() === interessenCMD && message.author.id == yourID)
-            message.channel.send(FilmEmbed)
-        if (message.content.toLowerCase() === interessenCMD && message.author.id == yourID)
-            message.channel.send(PrintEmbed)
-        if (message.content.toLowerCase() === interessenCMD && message.author.id == yourID)
-            message.channel.send(CGIEmbed)
-        if (message.content.toLowerCase() === interessenCMD && message.author.id == yourID)
-            message.channel.send(EntwicklungEmbed)
+        if (message.content.toLowerCase() === interessenCMD && message.author.id == yourID){
+            message.channel.send("Du möchtest dich mit den anderen Servermitgliedern über deine ")
+        if (message.content.toLowerCase() === interessenCMD && message.author.id == yourID){
+            message.channel.send(DigitalEmbed)}
+        if (message.content.toLowerCase() === interessenCMD && message.author.id == yourID){
+            message.channel.send(FilmEmbed)}
+        if (message.content.toLowerCase() === interessenCMD && message.author.id == yourID){
+            message.channel.send(PrintEmbed)}
+        if (message.content.toLowerCase() === interessenCMD && message.author.id == yourID){
+            message.channel.send(CGIEmbed)}
+        if (message.content.toLowerCase() === interessenCMD && message.author.id == yourID){
+            message.channel.send(EntwicklungEmbed)}
     }
     
 });
