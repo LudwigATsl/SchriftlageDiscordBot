@@ -130,28 +130,28 @@ bot.on("message", message => {
 });
     
 var DigitalEmbed = new Discord.RichEmbed()
-.setColor("#7289da")
+.setColor("#f1c41e")
 .setThumbnail("https://i.imgur.com/K9xW5B4.png")
 .addField("Digital", "das kann ich für dich tun", true)
             
         
 var FilmEmbed = new Discord.RichEmbed()
-.setColor("#7289da")
+.setColor("#37f1c6")
 .setThumbnail("https://i.imgur.com/dciXn7h.png")
 .addField("Film", "das kann ich für dich tun", true)
 
 var PrintEmbed = new Discord.RichEmbed()
-.setColor("#7289da")
+.setColor("#30cd50")
 .setThumbnail("https://i.imgur.com/meRRm5R.png")
 .addField("Print", "das kann ich für dich tun", true)
         
 var CGIEmbed = new Discord.RichEmbed()
-.setColor("#7289da")
+.setColor("#cd333f")
 .setThumbnail("https://i.imgur.com/sGoJM2Y.png")
 .addField("CGI", "das kann ich für dich tun", true)
         
 var EntwicklungEmbed = new Discord.RichEmbed()
-.setColor("#7289da")
+.setColor("#9159b6")
 .setThumbnail("https://i.imgur.com/PmeG7m4.png")
 .addField("Entwicklung", "das kann ich für dich tun", true)
 
