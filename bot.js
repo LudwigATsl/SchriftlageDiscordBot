@@ -43,7 +43,7 @@ bot.on('ready', () => {
 function generateMessages(){
     var messages = [];
     messages.push(initialMessage);
-    for (let role of roles) messages.push(`---\nAbboniere das <:SL:527796195280551936> - Interessengebiet **"${role}"** durch einen Klick auf die unten aufgeführte Reaktion!`); //DONT CHANGE THIS
+    for (let role of roles) messages.push(`___\nAbboniere das <:SL:527796195280551936> - Interessengebiet **"${role}"** durch einen Klick auf die unten aufgeführte Reaktion!`); //DONT CHANGE THIS
     return messages;
 }
 
@@ -130,30 +130,30 @@ bot.on("message", message => {
 });
     
 var DigitalEmbed = new Discord.RichEmbed()
-.setColor("#f1c41e")
+.setColor("#FFFFFF")
 .setThumbnail("https://i.imgur.com/K9xW5B4.png")
-.addField("Digital", "das kann ich für dich tun", true)
+.addField("Digital","Dein Ort für alles was du nicht in deinen Händen halten kannst. Ob Pixel- oder Vectorgrafik, die Zukunft ist Digital!", true)
             
         
 var FilmEmbed = new Discord.RichEmbed()
-.setColor("#37f1c6")
+.setColor("#FFFFFF")
 .setThumbnail("https://i.imgur.com/dciXn7h.png")
-.addField("Film", "das kann ich für dich tun", true)
+.addField("Film & Foto", "Bild! Sowohl mit als auch ohne Ton! Das, wofür du Lebst! Deine Leidenschaft ! Der Moment, festgehalten im Bild. Bearbeitet oder nicht ! Zeig deine Meisterwerke, oder betrachte die anderer. Teilt eure Kunst, oder helft euch gegenseitig, eure Werke zu verbessern!", true)
 
 var PrintEmbed = new Discord.RichEmbed()
-.setColor("#30cd50")
+.setColor("#FFFFFF")
 .setThumbnail("https://i.imgur.com/meRRm5R.png")
-.addField("Print", "das kann ich für dich tun", true)
+.addField("Print", "Du liebst den Geruch von frisch bedrucktem Papier ? Und findest Visitenkarten noch immer ziemlich nice ? Dann solltest du dir den <:SL:527796195280551936>> - Interessenbereich **Print** einmal näher ansehen. Egal ob Armbänder, Verpackungen oder Briefumschläge, hier kannst du dich mit den anderen über alles austauschen was ein Drucker bedrucken kann!", true)
         
-var CGIEmbed = new Discord.RichEmbed()
-.setColor("#cd333f")
+var CGIEmbed = new Discord.RichEmbed() 
+.setColor("#FFFFFF")
 .setThumbnail("https://i.imgur.com/sGoJM2Y.png")
-.addField("CGI", "das kann ich für dich tun", true)
+.addField("CGI", "Renderings bis zu VFX auf Hollywood Niveau. Realistisch gesehen, euere eigene Welt, in der ihr machen könnt was ihr wollt", true)
         
 var EntwicklungEmbed = new Discord.RichEmbed()
-.setColor("#9159b6")
+.setColor("#FFFFFF")
 .setThumbnail("https://i.imgur.com/PmeG7m4.png")
-.addField("Entwicklung", "das kann ich für dich tun", true)
+.addField("Entwicklung", "Von Python über C++ bis zur Unreal Engine. Dein Bereich für App, Web, Softwareentwicklung etc.! Zeige uns deine Kreationen und hol dir Tipps und Tricks von anderen Mitgliedern ab!  ", true)
 
 
 
@@ -168,7 +168,7 @@ var interessenCMD = "!intr"
 bot.on("message", message => {
     if(message.author.bot === false) {
         if (message.content.toLowerCase() === interessenCMD && message.author.id == yourID){
-            message.channel.send("Du möchtest dich mit den anderen Servermitgliedern über deine ")
+            message.channel.send("Du möchtest dich mit den anderen Servermitgliedern über bestimmte Themen unterhalten, oder auf dem Laufenden bleiben, was wir bei Schriftlage so machen ? Dann solltest du dir die Schriftlage - Interessenrollen genauer ansehen!\n\nAbbonierst du eine <:SL:527796195280551936> - Interessenrolle, stehen dir neue Textkanäle zur Verfügung, in denen du dich ungestört zu den vorgegebenen Themen unterhalten kannst.\n\n__**Eine Interessenrolle zu abbonieren ist nicht schwer:**__\n\n**1.** Lies dir die Beschreibungen zu den <:SL:527796195280551936> - Interessenrollen aufmerksam durch.\n\n**2.** Unter dem Block mit den Beschreibungen, findest du das Menü zum Abbonieren. Reagiere nun hier mit dem vorgegebenen Emojie auf die Rollen, die dich interessieren.\n\n**3.** Nun stehen dir alle Funktionen zu deinen <:SL:527796195280551936> - Interessenrollen zur Verfügung!\n@here")
         if (message.content.toLowerCase() === interessenCMD && message.author.id == yourID){
             message.channel.send(DigitalEmbed)}
         if (message.content.toLowerCase() === interessenCMD && message.author.id == yourID){
@@ -210,7 +210,7 @@ if(message.content.toLowerCase() == prefix + "social"){
     var social = new Discord.RichEmbed()
         .setColor("#7289da")
         .setThumbnail(bot.user.avatarURL)
-        .addField("Social", "**Unsere Sozialen Netzwerke**\n[Instagram](https://www.instagram.com/schriftlage) - Unser Instagram Account\n[Twitter](https://twitter.com/schriftlage) - Unser Twitter Account\n[Facebook](https://www.facebook.com/Schriftlage) - Unsere Facebook Seite\n[YouTube](https://www.youtube.com/channel/UC_nrpoFCkPvWIle60Kz41IA) - Unser YouTube Kanal\n[Soundcloud](https://soundcloud.com/Schriftlage) - Unsere Soundcloud\n[Dribble](https://dribbble.com/Schriftlage) - Unser Dribble Account", true)
+        .addField("Social", "__**Unsere Sozialen Netzwerke**__\n\n[Instagram](https://www.instagram.com/schriftlage) - Auf Instagram siehst du Ausschnitte unserer Arbeiten und diverse andere Bilder unseres Altages und deren Fortschritt. \n\n[Twitter](https://twitter.com/schriftlage) - Auf Twitter Informieren wir euch in Echtzeit über die neuen Dinge und können eure Fragen beantworten.\n\n[Facebook](https://www.facebook.com/Schriftlage) - Auf Facebook könnt ihr euch ein detaillierteres Bild unserer Arbeit machen.\n\n[YouTube](https://www.youtube.com/channel/UC_nrpoFCkPvWIle60Kz41IA) - Auf unseren YouTube Kanal kannst du dir ganz bequem die besten unserer Projekte anschauen. \n\n[Soundcloud](https://soundcloud.com/Schriftlage) - Unsere Soundcloud\n\n[Dribble](https://dribbble.com/Schriftlage) - Unser Dribble Account", true)
         message.author.send(social);
     
 }; 
